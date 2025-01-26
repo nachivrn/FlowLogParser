@@ -35,14 +35,18 @@ FlowLogParser is a Java application designed to process and analyze network flow
     - Duplicate lines are counted separately
     - "Untagged" is used when no matching tag is found in lookup table
 
-## Setup and Execution
+## Compile
 ```
-javac FlowLogParser.java
+javac src/FlowLogParser.java -d .
 
-javac -cp .:junit-platform-console-standalone-1.8.2.jar FlowLogParserTest.java
+javac -cp .:lib/junit-platform-console-standalone-1.8.2.jar src/FlowLogParserTest.java -d .
+```
 
-java -jar junit-platform-console-standalone-1.8.2.jar --class-path . --select-class FlowLogParserTest
+## Run Program
+```
+java FlowLogParser ./data/flowlogfile.txt ./data/lookuptable.csv ./output.txt
 
+java -jar lib/junit-platform-console-standalone-1.8.2.jar --class-path . --select-class FlowLogParserTest
 ```
 ## Testing Details
 
