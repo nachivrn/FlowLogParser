@@ -76,7 +76,7 @@ java -jar lib/junit-platform-console-standalone-1.8.2.jar --class-path . --selec
    - Malformed input lines
 
 ### Performance Testing
-- Tested with 100,000+ flow log records approximately 10MB
+- Tested with 100,000+ flow log records approximately 10MB and lookup table with 10,000 entries
 - Measured processing time for large datasets
 - Confirmed proper thread utilization
 
