@@ -37,6 +37,11 @@ FlowLogParser is a Java application designed to process and analyze network flow
 
 ## Compile
 ```
+# Clone the repo FlowLogParser
+git clone https://github.com/nachivrn/FlowLogParser.git
+
+cd FlowLogParser
+
 javac src/FlowLogParser.java -d .
 
 javac -cp .:lib/junit-platform-console-standalone-1.8.2.jar src/FlowLogParserTest.java -d .
@@ -44,8 +49,13 @@ javac -cp .:lib/junit-platform-console-standalone-1.8.2.jar src/FlowLogParserTes
 
 ## Run Program
 ```
-java FlowLogParser ./data/flowlogfile.txt ./data/lookuptable.csv ./output.txt
+# Run the code
+java FlowLogParser ./data/flowlogfile.txt ./data/lookuptable.csv ./data/output.txt
 
+# Check output
+cat ./data/output.txt
+
+# Run the Unit & Functional tests
 java -jar lib/junit-platform-console-standalone-1.8.2.jar --class-path . --select-class FlowLogParserTest
 ```
 ## Testing Details
