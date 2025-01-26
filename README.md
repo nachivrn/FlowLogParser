@@ -16,10 +16,7 @@ FlowLogParser is a Java application designed to process and analyze network flow
 1. Flow Log Version:
     - Assumes VPC Flow Logs version 2 format
     - No header row in flow log file
-    - Each line must contain minimum 8 fields:
-      ```
-      src dst bytes srcport dstport ip dstport protocol
-      ```
+    - Each line must contain minimum 8 fields
     - Lines with fewer than 8 fields are skipped
     - Fields are space-separated
 
